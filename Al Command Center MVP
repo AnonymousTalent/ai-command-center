@@ -1,0 +1,21 @@
+ai-command-center/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── auth.py          # JWT
+│   ├── agents.py        # Agent Registry + 呼叫邏輯
+│   ├── models.py        # Pydantic schemas
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── chat.py      # 多AI路由API
+│   │   └── agents.py    # Agent管理API
+│   └── utils/
+│       ├── logger.py
+│       └── ai_clients.py # 統一呼叫各家AI
+├── docker/
+│   ├── Dockerfile
+│   └── requirements.txt
+├── docker-compose.yml
+├── .env.example
+├── README.md            # 一定要寫：怎麼啟動、API文件、展示影片連結
+└── logs/                # 執行後自動產生
