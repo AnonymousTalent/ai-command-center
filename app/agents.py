@@ -37,3 +37,12 @@ def route_to_agent(agent_name: str, prompt: str) -> Dict[str, Any]:
         "model": agent["model"],
         "response": response
     }
+AGENTS = {
+    # ... 你原本的 agents ...
+    "job_application": {
+        "provider": "openai",
+        "model": "gpt-4o-mini",
+        "description": "自動產生客製化求職信並寄送"
+    },
+    # ...
+}
