@@ -1,0 +1,3 @@
+from .routers import job   # 新增這行
+
+app.include_router(job.router, prefix="/api/v1", dependencies=[Depends(verify_jwt)])
