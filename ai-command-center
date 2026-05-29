@@ -1,0 +1,8 @@
+app/
+├── routers/
+│   └── industrial.py          # 工業AI API
+├── services/
+│   ├── halcon_mock.py         # 模擬HALCON輸出
+│   └── defect_analyzer.py     # LLM分析缺陷
+└── dashboard/
+    └── streamlit_app.py       # 展示儀表板
